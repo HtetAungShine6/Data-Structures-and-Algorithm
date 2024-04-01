@@ -1,0 +1,38 @@
+What is a stack?
+A stack is a fundamental data structure that follows the Last-In-First-Out (LIFO) principle, meaning that the last element added to the stack is the first one to be removed. It operates on two main operations: "push," which adds an element to the top of the stack, and "pop," which removes the top element from the stack. Additionally, some implementations may include other operations such as "peek" to view the top element without removing it, and "isEmpty" to check if the stack is empty. Stacks are widely used in programming for tasks such as function call management, expression evaluation, and backtracking algorithms.
+
+What operations can you perform on a stack?
+Push: Adds an element to the top of the stack.
+Pop: Removes and returns the top element from the stack.
+Peek (or Top): Returns the top element of the stack without removing it.
+isEmpty: Checks if the stack is empty.
+isFull: Checks if the stack is full (if it has a maximum capacity).
+Size: Returns the number of elements currently in the stack.
+Clear: Removes all elements from the stack, leaving it empty.
+
+Where in a stack are elements pushed and popped?
+In a stack, elements are pushed onto and popped from the top of the stack. The top of the stack refers to the end of the stack where the most recently added element resides. When you push an element onto a stack, it is placed at the top of the stack, becoming the new top element. Similarly, when you pop an element from the stack, it is removed from the top of the stack, and the next element below it becomes the new top element. This characteristic follows the Last-In-First-Out (LIFO) principle, where the last element pushed onto the stack is the first one to be popped off.
+
+What is a queue?
+A queue is a fundamental data structure that follows the First-In-First-Out (FIFO) principle. It represents a collection of elements in which items are added at the rear (also known as the "tail") and removed from the front (also known as the "head").
+In simpler terms, think of a queue as a line of people waiting for a service. The person who joins the line first is the first one to be served, and as people join the line, they join at the rear of the queue. When service begins, it starts with the person at the front of the line, and as each person is served, they are removed from the front of the queue.
+The main operations performed on a queue include:
+Enqueue: Adds an element to the rear of the queue.
+Dequeue: Removes and returns the element at the front of the queue.
+Peek (or Front): Returns the element at the front of the queue without removing it.
+isEmpty: Checks if the queue is empty.
+isFull: Checks if the queue is full (if it has a maximum capacity).
+Size: Returns the number of elements currently in the queue.
+Clear: Removes all elements from the queue, leaving it empty.
+Queues are commonly used in scenarios such as task scheduling, resource allocation, and process management in computer science and real-world applications.
+
+What data structure supports operations like enqueue and dequeue?
+The data structure that supports operations like enqueue and dequeue is a queue. In a queue, elements are added to the rear (enqueue operation) and removed from the front (dequeue operation) according to the First-In-First-Out (FIFO) principle. Additionally, queues typically support other operations such as peeking at the front element, checking if the queue is empty, determining its size, and clearing its contents.
+
+How are elements typically added and removed in a queue?
+Elements are typically added to a queue using the "enqueue" operation, where the new element is inserted at the rear (also known as the "tail") of the queue. When an element is enqueued, it becomes the new last element in the queue.
+
+Conversely, elements are removed from a queue using the "dequeue" operation, which removes and returns the element at the front (also known as the "head") of the queue. When an element is dequeued, the next element in line becomes the new front element, and the queue adjusts accordingly.
+
+This process ensures that elements in the queue are handled in a First-In-First-Out (FIFO) manner, where the first element added is the first one to be removed.
+

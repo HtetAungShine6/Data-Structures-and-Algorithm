@@ -1,0 +1,68 @@
+1. The components of a graph are vertices (nodes) and edges. Vertices represent entities, and edges represent connections or relationships between these entities. Additionally, graphs may have attributes such as weights, labels, and adjacency information.
+
+2. A real-life example of a directed graph is a social media network such as Twitter. In Twitter, users can follow other users to receive updates from them. This relationship of "following" forms a directed graph, where each user represents a vertex, and the "follow" action represents a directed edge from one user to another. For instance, if user A follows user B, there is a directed edge from vertex A (representing user A) to vertex B (representing user B). However, this doesn't necessarily mean that user B follows user A, so the relationship is asymmetric. This directed graph structure captures the flow of information or influence among users on the platform.
+
+3. A real-life example of an undirected graph is a road network. In a road network, intersections are represented as vertices, and roads connecting these intersections are represented as edges.
+
+Consider a simplified road network in a city where intersections are represented as vertices, and roads connecting them are represented as edges. Each road allows traffic to flow in both directions, meaning the relationship between intersections is symmetric.
+
+For example, suppose there are three intersections A, B, and C, and roads connecting them as follows:
+
+Intersection A is connected to intersection B by a road.
+Intersection B is connected to intersection C by a road.
+In this case, we have an undirected graph where vertices A, B, and C are connected by edges representing roads. This means that if there's a road from A to B, then there's also a road from B to A, and the relationship between these intersections is bidirectional.
+
+4. A graph is considered "connected" if there is a path between every pair of vertices within the graph, ensuring that no vertices are isolated or unreachable from any other vertex.
+
+5. When a graph is called "fully connected," it means that every vertex is directly connected to every other vertex in the graph by an edge, resulting in maximum connectivity.
+
+6. Yes, a tree is a connected graph. In fact, a tree is a specific type of connected graph with the following properties:
+
+There is exactly one path between any pair of vertices.
+There are no cycles in the graph.
+Therefore, a tree is not only connected but also maximally connected, as adding any additional edge would create a cycle, violating the definition of a tree.
+
+7. A tree is distinguished from a general graph by the following properties:
+Acyclicity: Trees are acyclic graphs, meaning they do not contain any cycles or loops.
+Connectedness: Trees are connected graphs, ensuring there is a path between every pair of vertices.
+Exactly One Path: In a tree, there is exactly one path between any two vertices, providing a unique connectivity structure.
+No Cycles: Unlike general graphs, trees cannot have cycles, making them suitable for representing hierarchical structures and organizing data.
+
+A tree is distinguished from a general graph by:
+
+Acyclicity: Trees do not contain cycles or loops.
+Connectedness: Trees are connected graphs, ensuring a path between every pair of vertices.
+Hierarchical Structure: Trees have a hierarchical structure, with a root node and branches leading to leaf nodes.
+Exactly One Path: There is exactly one path between any two vertices in a tree.
+
+8. A rooted tree is a special type of tree where one vertex is designated as the "root." The root vertex serves as the starting point for traversing the tree. In a rooted tree:
+
+Every vertex has exactly one parent, except for the root, which has no parent.
+Each vertex may have zero or more children.
+There is a unique path from the root to every other vertex in the tree.
+The direction of edges is from parent to child, implying a hierarchical relationship.
+Rooted trees are commonly used in computer science, data structures, and algorithms to represent hierarchical structures such as file systems, organizational charts, and family trees.
+
+9. In the context of a tree data structure, a leaf is a vertex (or node) that has no children. In other words, it's a vertex with a degree of 0, meaning it is not connected to any other vertices in the tree by outgoing edges. Leaves are often visualized as the endpoints of branches in a tree structure. They represent the terminal nodes of the tree, with no further branches extending from them. A leaf in a tree is a vertex that has no children, meaning it has a degree of 0 and is the endpoint of a branch.
+
+10. In a tree with n nodes, there are n−1 edges. This is a fundamental property of trees known as the "handshaking lemma" or "tree theorem." Each additional node beyond the first one adds one edge to the tree, except for the last node, which does not introduce any new edges. Therefore, the total number of edges in a tree with n nodes is n−1.
+
+11. In a tree, there is exactly one simple path between any pair of nodes. This property holds true because a tree is acyclic and connected. As a result, there is a unique path between any two nodes, ensuring that no cycles or redundant paths exist. Therefore, there is only one simple path between a pair of tree nodes.
+
+12. A "weighted" graph is a graph where each edge has an associated numerical value called a weight, representing some measure of cost, distance, or value associated with traversing the edge.
+
+//Definition of Edge
+An edge list is a data structure used to represent a graph. It simply lists all the edges in the graph. Each edge in the list typically consists of two vertices (nodes) that the edge connects. Optionally, the edge list may include additional information such as weights or labels associated with each edge. The edge list is one of the simplest ways to represent a graph and is particularly useful for sparse graphs.
+
+//Definition of Adjacency Matrix
+An adjacency matrix is a square matrix used to represent a graph. The rows and columns of the matrix correspond to vertices in the graph, and the entries of the matrix indicate whether pairs of vertices are adjacent or not. Typically, a value of 1 indicates adjacency (presence of an edge) between two vertices, while a value of 0 indicates no adjacency (absence of an edge). For weighted graphs, the entries of the matrix may represent the weights of the edges connecting the vertices. Adjacency matrices are useful for dense graphs or when quick lookups of edge presence or weight are required.
+
+//Definition of Adjacency List
+An adjacency list is a data structure used to represent a graph where each vertex (node) in the graph is associated with a list of its neighboring vertices. It is a collection of lists, one for each vertex in the graph. Each list contains the vertices adjacent to the corresponding vertex. This data structure is efficient for representing sparse graphs because it only stores information about edges that actually exist in the graph.
+
+What is node?
+In the context of graphs and data structures, a "node" is a fundamental unit of data that represents an entity within the structure. The term "node" is used in various data structures, including trees, linked lists, graphs, and more.
+In graphs specifically, a node typically represents an object or entity, and it can be connected to other nodes via edges. Nodes are also sometimes referred to as "vertices." Each node in a graph may contain additional information beyond its identity, such as attributes or properties.
+For example, in a social network graph, each node could represent a user, with additional information such as the user's name, age, and profile picture stored within the node.
+In summary, a node is a fundamental building block within a graph data structure, representing an entity or object, and forming connections with other nodes through edges.
+
